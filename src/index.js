@@ -112,6 +112,7 @@ class Portfolio {
     this._title = title;
     this._id = uuidv4();
     this._projects = new Array();
+    this.save();
   }
 
   get projects() {
@@ -120,10 +121,12 @@ class Portfolio {
 
   addProject(project) {
     this._projects.push(project);
+    this.save();
   }
 
   removeProject(project) {
     this._projects = this._projects.filter((input) => input.id !== project.id);
+    this.save();
   }
 
   get todos() {
@@ -136,8 +139,34 @@ class Portfolio {
     ]);
   }
 
-  // get/set data in localStorage?
-  //   yes, but factor through todo/project
+  save() {
+    if (util.storageAvailable("localStorage")) {
+      localStorage.setItem(`portfolio-${this._id}`, JSON.stringify(this));
+    }
+  }
+
+  delete() {
+    if (util.storageAvailable("localStorage")) {
+      localStorage.removeItem(`portfolio-${this._id}`);
+    }
+  }
+}
+
+function load(id) {
+  if (util.storageAvailable("localStorage")) {
+    let target_key = "portfolio";
+    if (id !== undefined) {
+      // get by ID
+      target_key += `-${id}`;
+    }
+
+    const keys = Object.keys(localStorage);
+    for (let key of keys) {
+      console.log(`${key}: ${localStorage.getItem(key)}`);
+    }
+    const result = undefined;
+    return result;
+  }
 }
 
 function createDefault() {
@@ -153,6 +182,9 @@ function createDefault() {
 
   return defaultPortfolio;
 }
+
+window.load = load;
+window.util = util;
 
 window.createDefault = createDefault;
 

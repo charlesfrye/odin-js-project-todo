@@ -16,9 +16,11 @@ function load(id) {
     const keys = Object.keys(localStorage);
     for (let key of keys) {
       console.log(`${key}: ${localStorage.getItem(key)}`);
+      if (key) {
+        const result = JSON.parse(localStorage.getItem(key));
+        return result;
+      }
     }
-    const result = undefined;
-    return result;
   }
 }
 
@@ -34,6 +36,12 @@ function createDefault() {
   defaultPortfolio.addProject(defaultProject);
 
   return defaultPortfolio;
+}
+
+const loaded = load();
+
+if (loaded === undefined) {
+  createDefault();
 }
 
 window.load = load;

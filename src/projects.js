@@ -13,7 +13,7 @@ class Project {
 
   set title(string) {
     if (typeof string === "string") {
-      this._isComplete = string;
+      this._title = string;
     } else {
       console.log(`invalid string for title: ${string}`);
     }

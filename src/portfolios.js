@@ -8,6 +8,18 @@ class Portfolio {
     this.save();
   }
 
+  get title() {
+    return this._title;
+  }
+
+  set title(string) {
+    if (typeof string === "string") {
+      this._title = string;
+    } else {
+      console.log(`invalid string for title: ${string}`);
+    }
+  }
+
   get projects() {
     return this._projects;
   }

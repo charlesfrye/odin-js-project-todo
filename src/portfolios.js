@@ -17,7 +17,7 @@ class Portfolio {
   }
 
   removeProject(project) {
-    this._projects = this._projects.filter((input) => input.id !== project.id);
+    this.projects = this.projects.filter((input) => input.id !== project.id);
     this.save();
   }
 

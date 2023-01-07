@@ -18,10 +18,6 @@ class Portfolio {
     );
     this.projects.map((project) => project.setup());
   }
-
-  remove() {
-    this.div.remove();
-  }
 }
 
 class Project {
@@ -36,6 +32,12 @@ class Project {
     this.div.innerHTML += `<h3>${this.manager.title}</h3>`;
     this.portfolio.div.appendChild(this.div);
     this.setupTodos();
+    this.div.addEventListener("mousedown", (event) =>
+      util.handleHold(event, this)
+    );
+    this.div.addEventListener("touchstart", (event) =>
+      util.handleHold(event, this)
+    );
   }
 
   setupTodos() {
@@ -45,7 +47,13 @@ class Project {
   }
 
   remove() {
+    this.portfolio.manager.removeProject(this.manager);
     this.div.remove();
+    this.save();
+  }
+
+  save() {
+    this.portfolio.manager.save();
   }
 }
 
@@ -59,18 +67,21 @@ class Todo {
     this.div = document.createElement("div");
     this.div.classList.add("todo");
     this.div.innerHTML += `<p>${this.manager.title}</p>`;
-    this.div.addEventListener("click", (_) => this.handleClick());
+    // this.div.addEventListener("click", (_) => this.handleClick());
+    this.div.addEventListener("mousedown", (event) =>
+      util.handleHold(event, this)
+    );
+    this.div.addEventListener("touchstart", (event) =>
+      util.handleHold(event, this)
+    );
     this.project.div.appendChild(this.div);
     this.styleComplete();
-  }
-
-  remove() {
-    this.div.remove();
   }
 
   handleClick() {
     this.manager.isComplete = !this.manager.isComplete;
     this.styleComplete();
+    this.save();
   }
 
   styleComplete() {
@@ -80,6 +91,15 @@ class Todo {
     } else {
       todoDiv.classList.remove("complete");
     }
+  }
+
+  remove() {
+    this.project.manager.removeTodo(this.manager);
+    this.div.remove();
+    this.save();
+  }
+
+  save() {
     this.project.portfolio.manager.save();
   }
 }

@@ -49,4 +49,14 @@ function loadFromStorage(id) {
   }
 }
 
-export { clearStorage, storageAvailable, loadFromStorage };
+function handleHold(event, target) {
+  const targetDiv = event.target;
+  event.stopPropagation();
+  setTimeout(function () {
+    if ((targetDiv.onmousedown = true) | (targetDiv.ontouchstart = true)) {
+      target.remove();
+    }
+  }, 1000);
+}
+
+export { clearStorage, storageAvailable, loadFromStorage, handleHold };

@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0px;\\n  padding: 0px;\\n  color:aliceblue;\\n}\\n\\np,h1,h2,h3 {\\n  -webkit-touch-callout: none; /* iOS Safari */\\n    -webkit-user-select: none; /* Safari */\\n      -khtml-user-select: none; /* Konqueror HTML */\\n        -moz-user-select: none; /* Old versions of Firefox */\\n        -ms-user-select: none; /* Internet Explorer/Edge */\\n            user-select: none; /* Non-prefixed version, currently\\n                                  supported by Chrome, Edge, Opera and Firefox */\\n}\\n\\nbody {\\n  background-color: black;\\n}\\n\\ndiv {\\n  border: 0px dashed aliceblue;\\n}\\n\\n#container {\\n  width: 100vw;\\n}\\n\\n.portfolio {\\n  padding: 1rem;\\n  display: grid;\\n  grid-template-rows: repeat(auto-fit, 20rem);\\n  grid-template-columns: repeat(auto-fit, 20rem);\\n  gap: 4rem;\\n}\\n\\n.project {\\n  display: grid;\\n  grid-template-rows: repeat(auto-fit, 2rem);\\n  align-items: center;\\n  background-color: #2f2e2e;\\n  border-radius: 1rem;\\n  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem #333232;\\n  padding: 1rem;\\n}\\n\\n.todo {\\n  margin-left: 1rem;\\n  margin-right: 1rem;\\n  padding-top: 0.5rem;\\n  padding-bottom: 0.5rem;\\n}\\n\\n.complete{\\n  text-decoration: line-through;\\n  text-decoration-thickness: 0.2rem;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://project-todo/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/OpenSans-Regular.ttf */ \"./src/assets/OpenSans-Regular.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face {\\n  font-family: 'OpenSans';\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format('truetype');\\n  font-style: normal;\\n  font-weight: 400;\\n}\\n\\n* {\\n  margin: 0px;\\n  padding: 0px;\\n  color:aliceblue;\\n  font-family: 'OpenSans';\\n}\\n\\np,h1,h2,h3 {\\n  -webkit-touch-callout: none; /* iOS Safari */\\n    -webkit-user-select: none; /* Safari */\\n      -khtml-user-select: none; /* Konqueror HTML */\\n        -moz-user-select: none; /* Old versions of Firefox */\\n        -ms-user-select: none; /* Internet Explorer/Edge */\\n            user-select: none; /* Non-prefixed version, currently\\n                                  supported by Chrome, Edge, Opera and Firefox */\\n}\\n\\nbody {\\n  background-color: black;\\n}\\n\\ndiv {\\n  border: 0px dashed aliceblue;\\n}\\n\\n#container {\\n  width: 100vw;\\n}\\n\\n.portfolio {\\n  padding: 1rem;\\n  display: grid;\\n  grid-template-rows: repeat(auto-fit, 20rem);\\n  grid-template-columns: repeat(auto-fit, 20rem);\\n  gap: 4rem;\\n}\\n\\n.project {\\n  display: grid;\\n  grid-template-rows: repeat(auto-fit, 2rem);\\n  align-items: center;\\n  background-color: #2f2e2e;\\n  border-radius: 1rem;\\n  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem #333232;\\n  padding: 1rem;\\n}\\n\\n.todo {\\n  margin-left: 1rem;\\n  margin-right: 1rem;\\n  padding-top: 0.5rem;\\n  padding-bottom: 0.5rem;\\n}\\n\\n.complete{\\n  text-decoration: line-through;\\n  text-decoration-thickness: 0.2rem;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://project-todo/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://project-todo/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://project-todo/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -526,7 +536,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"setup\": () => (/* binding */ setup)\n/* harmony export */ });\nclass Portfolio {\n  constructor(container, portfolioManager) {\n    this.manager = portfolioManager;\n    this.container = container;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"portfolio\");\n    this.container.appendChild(this.div);\n    this.setupProjects();\n  }\n\n  setupProjects() {\n    const projectManagers = this.manager.projects;\n    this.projects = projectManagers.map(\n      (projectManager) => new Project(this, projectManager)\n    );\n    this.projects.map((project) => project.setup());\n  }\n\n  remove() {\n    this.div.remove();\n  }\n}\n\nclass Project {\n  constructor(portfolio, projectManager) {\n    this.portfolio = portfolio;\n    this.manager = projectManager;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"project\");\n    this.div.innerHTML += `<h3>${this.manager.title}</h3>`;\n    this.portfolio.div.appendChild(this.div);\n    this.setupTodos();\n  }\n\n  setupTodos() {\n    const todoManagers = this.manager.todos;\n    this.todos = todoManagers.map((todoManager) => new Todo(this, todoManager));\n    this.todos.map((todo) => todo.setup());\n  }\n\n  remove() {\n    this.div.remove();\n  }\n}\n\nclass Todo {\n  constructor(project, todoManager) {\n    this.project = project;\n    this.manager = todoManager;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"todo\");\n    this.div.innerHTML += `<p>${this.manager.title}</p>`;\n    this.div.addEventListener(\"click\", (_) => this.handleClick());\n    this.project.div.appendChild(this.div);\n    this.styleComplete();\n  }\n\n  remove() {\n    this.div.remove();\n  }\n\n  handleClick() {\n    this.manager.isComplete = !this.manager.isComplete;\n    this.styleComplete();\n  }\n\n  styleComplete() {\n    const todoDiv = this.div;\n    if (this.manager.isComplete) {\n      todoDiv.classList.add(\"complete\");\n    } else {\n      todoDiv.classList.remove(\"complete\");\n    }\n    this.project.portfolio.manager.save();\n  }\n}\n\nfunction setup(portfolioManager) {\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const container = document.getElementById(\"container\");\n    const portfolio = new Portfolio(container, portfolioManager);\n    portfolio.setup();\n  });\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/dom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"setup\": () => (/* binding */ setup)\n/* harmony export */ });\nclass Portfolio {\n  constructor(container, portfolioManager) {\n    this.manager = portfolioManager;\n    this.container = container;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"portfolio\");\n    this.container.appendChild(this.div);\n    this.setupProjects();\n  }\n\n  setupProjects() {\n    const projectManagers = this.manager.projects;\n    this.projects = projectManagers.map(\n      (projectManager) => new Project(this, projectManager)\n    );\n    this.projects.map((project) => project.setup());\n  }\n}\n\nclass Project {\n  constructor(portfolio, projectManager) {\n    this.portfolio = portfolio;\n    this.manager = projectManager;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"project\");\n    this.div.innerHTML += `<h3>${this.manager.title}</h3>`;\n    this.portfolio.div.appendChild(this.div);\n    this.setupTodos();\n    this.div.addEventListener(\"mousedown\", (event) =>\n      util.handleHold(event, this)\n    );\n    this.div.addEventListener(\"touchstart\", (event) =>\n      util.handleHold(event, this)\n    );\n  }\n\n  setupTodos() {\n    const todoManagers = this.manager.todos;\n    this.todos = todoManagers.map((todoManager) => new Todo(this, todoManager));\n    this.todos.map((todo) => todo.setup());\n  }\n\n  remove() {\n    this.portfolio.manager.removeProject(this.manager);\n    this.div.remove();\n    this.save();\n  }\n\n  save() {\n    this.portfolio.manager.save();\n  }\n}\n\nclass Todo {\n  constructor(project, todoManager) {\n    this.project = project;\n    this.manager = todoManager;\n  }\n\n  setup() {\n    this.div = document.createElement(\"div\");\n    this.div.classList.add(\"todo\");\n    this.div.innerHTML += `<p>${this.manager.title}</p>`;\n    // this.div.addEventListener(\"click\", (_) => this.handleClick());\n    this.div.addEventListener(\"mousedown\", (event) =>\n      util.handleHold(event, this)\n    );\n    this.div.addEventListener(\"touchstart\", (event) =>\n      util.handleHold(event, this)\n    );\n    this.project.div.appendChild(this.div);\n    this.styleComplete();\n  }\n\n  handleClick() {\n    this.manager.isComplete = !this.manager.isComplete;\n    this.styleComplete();\n    this.save();\n  }\n\n  styleComplete() {\n    const todoDiv = this.div;\n    if (this.manager.isComplete) {\n      todoDiv.classList.add(\"complete\");\n    } else {\n      todoDiv.classList.remove(\"complete\");\n    }\n  }\n\n  remove() {\n    this.project.manager.removeTodo(this.manager);\n    this.div.remove();\n    this.save();\n  }\n\n  save() {\n    this.project.portfolio.manager.save();\n  }\n}\n\nfunction setup(portfolioManager) {\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const container = document.getElementById(\"container\");\n    const portfolio = new Portfolio(container, portfolioManager);\n    portfolio.setup();\n  });\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/dom.js?");
 
 /***/ }),
 
@@ -546,7 +556,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Portfolio\": () => (/* binding */ Portfolio),\n/* harmony export */   \"createNew\": () => (/* binding */ createNew),\n/* harmony export */   \"fromJSON\": () => (/* binding */ fromJSON)\n/* harmony export */ });\n/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uuid */ \"./node_modules/uuid/dist/esm-browser/v4.js\");\n/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects */ \"./src/projects.js\");\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util */ \"./src/util.js\");\n\n\n\n\n\nclass Portfolio {\n  constructor(title, id, projects) {\n    this.title = title;\n    this.id = id;\n    this.projects = new Array();\n    projects.map((project) => this.addProject(project));\n  }\n\n  addProject(project) {\n    this.projects.push(project);\n    this.save();\n  }\n\n  removeProject(project) {\n    this._projects = this._projects.filter((input) => input.id !== project.id);\n    this.save();\n  }\n\n  save() {\n    if (_util__WEBPACK_IMPORTED_MODULE_1__.storageAvailable(\"localStorage\")) {\n      localStorage.setItem(`portfolio-${this._id}`, JSON.stringify(this));\n    }\n  }\n\n  delete() {\n    if (_util__WEBPACK_IMPORTED_MODULE_1__.storageAvailable(\"localStorage\")) {\n      localStorage.removeItem(`portfolio-${this._id}`);\n    }\n  }\n}\n\nfunction createNew(title) {\n  return new Portfolio(title, (0,uuid__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(), new Array());\n}\n\nfunction fromJSON(json) {\n  const projs = json.projects.map((proj) => _projects__WEBPACK_IMPORTED_MODULE_0__.fromJSON(proj));\n  const portfolio = new Portfolio(json.title, json.id, projs);\n  return portfolio;\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/portfolios.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Portfolio\": () => (/* binding */ Portfolio),\n/* harmony export */   \"createNew\": () => (/* binding */ createNew),\n/* harmony export */   \"fromJSON\": () => (/* binding */ fromJSON)\n/* harmony export */ });\n/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uuid */ \"./node_modules/uuid/dist/esm-browser/v4.js\");\n/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects */ \"./src/projects.js\");\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util */ \"./src/util.js\");\n\n\n\n\n\nclass Portfolio {\n  constructor(title, id, projects) {\n    this.title = title;\n    this.id = id;\n    this.projects = new Array();\n    projects.map((project) => this.addProject(project));\n  }\n\n  addProject(project) {\n    this.projects.push(project);\n    this.save();\n  }\n\n  removeProject(project) {\n    this.projects = this.projects.filter((input) => input.id !== project.id);\n    this.save();\n  }\n\n  save() {\n    if (_util__WEBPACK_IMPORTED_MODULE_1__.storageAvailable(\"localStorage\")) {\n      localStorage.setItem(`portfolio-${this._id}`, JSON.stringify(this));\n    }\n  }\n\n  delete() {\n    if (_util__WEBPACK_IMPORTED_MODULE_1__.storageAvailable(\"localStorage\")) {\n      localStorage.removeItem(`portfolio-${this._id}`);\n    }\n  }\n}\n\nfunction createNew(title) {\n  return new Portfolio(title, (0,uuid__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(), new Array());\n}\n\nfunction fromJSON(json) {\n  const projs = json.projects.map((proj) => _projects__WEBPACK_IMPORTED_MODULE_0__.fromJSON(proj));\n  const portfolio = new Portfolio(json.title, json.id, projs);\n  return portfolio;\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/portfolios.js?");
 
 /***/ }),
 
@@ -576,7 +586,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"clearStorage\": () => (/* binding */ clearStorage),\n/* harmony export */   \"loadFromStorage\": () => (/* binding */ loadFromStorage),\n/* harmony export */   \"storageAvailable\": () => (/* binding */ storageAvailable)\n/* harmony export */ });\nfunction storageAvailable(type) {\n  let storage;\n  try {\n    storage = window[type];\n    const x = \"__storage_test__\";\n    storage.setItem(x, x);\n    storage.removeItem(x);\n    return true;\n  } catch (e) {\n    return (\n      e instanceof DOMException &&\n      // everything except Firefox\n      (e.code === 22 ||\n        // Firefox\n        e.code === 1014 ||\n        // test name field too, because code might not be present\n        // everything except Firefox\n        e.name === \"QuotaExceededError\" ||\n        // Firefox\n        e.name === \"NS_ERROR_DOM_QUOTA_REACHED\") &&\n      // acknowledge QuotaExceededError only if there's something already stored\n      storage &&\n      storage.length !== 0\n    );\n  }\n}\n\nfunction clearStorage() {\n  if (storageAvailable(\"localStorage\")) {\n    localStorage.clear();\n  }\n}\n\nfunction loadFromStorage(id) {\n  if (storageAvailable(\"localStorage\")) {\n    let target_key = \"portfolio\";\n    if (id !== undefined) {\n      // get by ID\n      target_key += `-${id}`;\n    }\n\n    const keys = Object.keys(localStorage);\n    for (let key of keys) {\n      if (key.startsWith(target_key)) {\n        const result = localStorage.getItem(key);\n        return result;\n      }\n    }\n  }\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/util.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"clearStorage\": () => (/* binding */ clearStorage),\n/* harmony export */   \"handleHold\": () => (/* binding */ handleHold),\n/* harmony export */   \"loadFromStorage\": () => (/* binding */ loadFromStorage),\n/* harmony export */   \"storageAvailable\": () => (/* binding */ storageAvailable)\n/* harmony export */ });\nfunction storageAvailable(type) {\n  let storage;\n  try {\n    storage = window[type];\n    const x = \"__storage_test__\";\n    storage.setItem(x, x);\n    storage.removeItem(x);\n    return true;\n  } catch (e) {\n    return (\n      e instanceof DOMException &&\n      // everything except Firefox\n      (e.code === 22 ||\n        // Firefox\n        e.code === 1014 ||\n        // test name field too, because code might not be present\n        // everything except Firefox\n        e.name === \"QuotaExceededError\" ||\n        // Firefox\n        e.name === \"NS_ERROR_DOM_QUOTA_REACHED\") &&\n      // acknowledge QuotaExceededError only if there's something already stored\n      storage &&\n      storage.length !== 0\n    );\n  }\n}\n\nfunction clearStorage() {\n  if (storageAvailable(\"localStorage\")) {\n    localStorage.clear();\n  }\n}\n\nfunction loadFromStorage(id) {\n  if (storageAvailable(\"localStorage\")) {\n    let target_key = \"portfolio\";\n    if (id !== undefined) {\n      // get by ID\n      target_key += `-${id}`;\n    }\n\n    const keys = Object.keys(localStorage);\n    for (let key of keys) {\n      if (key.startsWith(target_key)) {\n        const result = localStorage.getItem(key);\n        return result;\n      }\n    }\n  }\n}\n\nfunction handleHold(event, target) {\n  const targetDiv = event.target;\n  event.stopPropagation();\n  setTimeout(function () {\n    if ((targetDiv.onmousedown = true) | (targetDiv.ontouchstart = true)) {\n      target.remove();\n    }\n  }, 1000);\n}\n\n\n\n\n//# sourceURL=webpack://project-todo/./src/util.js?");
+
+/***/ }),
+
+/***/ "./src/assets/OpenSans-Regular.ttf":
+/*!*****************************************!*\
+  !*** ./src/assets/OpenSans-Regular.ttf ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"77c09223204154ae8d43.ttf\";\n\n//# sourceURL=webpack://project-todo/./src/assets/OpenSans-Regular.ttf?");
 
 /***/ })
 
@@ -606,6 +626,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -631,6 +654,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -645,6 +680,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

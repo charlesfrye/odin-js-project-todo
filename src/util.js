@@ -31,4 +31,22 @@ function clearStorage() {
   }
 }
 
-export { clearStorage, storageAvailable };
+function loadFromStorage(id) {
+  if (storageAvailable("localStorage")) {
+    let target_key = "portfolio";
+    if (id !== undefined) {
+      // get by ID
+      target_key += `-${id}`;
+    }
+
+    const keys = Object.keys(localStorage);
+    for (let key of keys) {
+      if (key.startsWith(target_key)) {
+        const result = localStorage.getItem(key);
+        return result;
+      }
+    }
+  }
+}
+
+export { clearStorage, storageAvailable, loadFromStorage };

@@ -4,10 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 import * as util from "./util";
 
 class Todo {
-  constructor(title, id) {
+  constructor(title, id, isComplete) {
     this.title = title;
     this.id = id;
-    this.isComplete = false;
+    this.isComplete = isComplete;
   }
 
   setDate(dateArray) {
@@ -21,25 +21,17 @@ class Todo {
     return dates.format(this._date, "yyyy-MM-dd");
   }
 
-  markComplete() {
-    this.isComplete = true;
-  }
-
-  markIncomplete() {
-    this.isComplete = false;
-  }
-
   setDescription(string) {
     this.description = string;
   }
 }
 
 function createNew(title) {
-  return new Todo(title, uuidv4());
+  return new Todo(title, uuidv4(), false);
 }
 
 function fromJSON(json) {
-  const todo = new Todo(json.title, json.id);
+  const todo = new Todo(json.title, json.id, json.isComplete);
   return todo;
 }
 

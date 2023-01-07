@@ -59,20 +59,28 @@ class Todo {
     this.div = document.createElement("div");
     this.div.classList.add("todo");
     this.div.innerHTML += `<p>${this.manager.title}</p>`;
-    this.div.addEventListener("click", (event) => handleClick(event.target));
+    this.div.addEventListener("click", (_) => this.handleClick());
     this.project.div.appendChild(this.div);
+    this.styleComplete();
   }
 
   remove() {
     this.div.remove();
   }
-}
 
-function handleClick(todoDiv) {
-  if (todoDiv.classList.contains("complete")) {
-    todoDiv.classList.remove("complete");
-  } else {
-    todoDiv.classList.add("complete");
+  handleClick() {
+    this.manager.isComplete = !this.manager.isComplete;
+    this.styleComplete();
+  }
+
+  styleComplete() {
+    const todoDiv = this.div;
+    if (this.manager.isComplete) {
+      todoDiv.classList.add("complete");
+    } else {
+      todoDiv.classList.remove("complete");
+    }
+    this.project.portfolio.manager.save();
   }
 }
 

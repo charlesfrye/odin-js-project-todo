@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   color:aliceblue;
+  font-family: 'OpenSans';
 }
 
 p,h1,h2,h3 {

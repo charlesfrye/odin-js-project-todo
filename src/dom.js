@@ -7,8 +7,19 @@ class Portfolio {
   setup() {
     this.div = document.createElement("div");
     this.div.classList.add("portfolio");
+
     this.container.appendChild(this.div);
+
     this.setupProjects();
+
+    const projectCreator = document.createElement("div");
+    projectCreator.classList.add("project");
+    projectCreator.innerText = "+ Create New";
+    projectCreator.setAttribute(
+      "style",
+      "align-content: center; align-items:center;"
+    );
+    this.div.appendChild(projectCreator);
   }
 
   setupProjects() {
@@ -29,15 +40,24 @@ class Project {
   setup() {
     this.div = document.createElement("div");
     this.div.classList.add("project");
-    this.div.innerHTML += `<h3>${this.manager.title}</h3>`;
+
+    const headerDiv = document.createElement("div");
+    headerDiv.classList.add("header");
+
+    const deleteButton = document.createElement("h3");
+    deleteButton.classList.add("delete");
+    deleteButton.innerText = "X";
+    deleteButton.addEventListener("click", () => this.remove());
+
+    const headerText = document.createElement("h3");
+    headerText.innerText = `${this.manager.title}`;
+
+    headerDiv.appendChild(deleteButton);
+    headerDiv.appendChild(headerText);
+    this.div.appendChild(headerDiv);
+
     this.portfolio.div.appendChild(this.div);
     this.setupTodos();
-    this.div.addEventListener("mousedown", (event) =>
-      util.handleHold(event, this)
-    );
-    this.div.addEventListener("touchstart", (event) =>
-      util.handleHold(event, this)
-    );
   }
 
   setupTodos() {
@@ -66,15 +86,20 @@ class Todo {
   setup() {
     this.div = document.createElement("div");
     this.div.classList.add("todo");
-    this.div.innerHTML += `<p>${this.manager.title}</p>`;
-    // this.div.addEventListener("click", (_) => this.handleClick());
-    this.div.addEventListener("mousedown", (event) =>
-      util.handleHold(event, this)
-    );
-    this.div.addEventListener("touchstart", (event) =>
-      util.handleHold(event, this)
-    );
+
+    const titleSpan = document.createElement("span");
+    titleSpan.innerText = `${this.manager.title}`;
+    titleSpan.addEventListener("click", (_) => this.handleClick());
+    this.div.appendChild(titleSpan);
+
+    const deleteButton = document.createElement("p");
+    deleteButton.classList.add("delete");
+    deleteButton.innerText = "X";
+    this.div.appendChild(deleteButton);
+    deleteButton.addEventListener("click", (_) => this.remove());
+
     this.project.div.appendChild(this.div);
+
     this.styleComplete();
   }
 
@@ -109,6 +134,9 @@ function setup(portfolioManager) {
     const container = document.getElementById("container");
     const portfolio = new Portfolio(container, portfolioManager);
     portfolio.setup();
+    for (const element of document.getElementsByClassName("delete")) {
+      addDeleteHandler(element);
+    }
   });
 }
 

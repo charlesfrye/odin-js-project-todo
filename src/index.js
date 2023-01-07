@@ -11,7 +11,7 @@ function createDefault() {
   const defaultProject = projects.createNew("Getting started with 🎉 Tada");
   const completedTodo = todos.createNew("Look at the first todo");
   const defaultTodo = todos.createNew("Create a new project");
-  const deleteTodo = todos.createNew("Hold down to delete a todo");
+  const deleteTodo = todos.createNew("Press an X to delete");
 
   completedTodo.isComplete = true;
 

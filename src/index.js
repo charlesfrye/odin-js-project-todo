@@ -1,54 +1,39 @@
 import * as util from "./util";
-import { Portfolio } from "./portfolios";
-import { Project } from "./projects";
-import { Todo } from "./todos";
+import * as portfolios from "./portfolios";
+import * as projects from "./projects";
+import * as todos from "./todos";
+import * as dom from "./dom";
 
 import "./style.css";
 
-function load(id) {
-  if (util.storageAvailable("localStorage")) {
-    let target_key = "portfolio";
-    if (id !== undefined) {
-      // get by ID
-      target_key += `-${id}`;
-    }
-
-    const keys = Object.keys(localStorage);
-    for (let key of keys) {
-      console.log(`${key}: ${localStorage.getItem(key)}`);
-      if (key) {
-        const result = JSON.parse(localStorage.getItem(key));
-        return result;
-      }
-    }
-  }
-}
-
 function createDefault() {
-  const defaultPortfolio = new Portfolio("Default Portfolio");
-  const defaultProject = new Project("Default Project");
-  const defaultTodo = new Todo("Sample Todo");
+  const defaultPortfolio = portfolios.createNew("Default Portfolio");
+  const defaultProject = projects.createNew("Getting started with 🎉 Tada");
+  const completedTodo = todos.createNew("Look at the first todo");
+  const defaultTodo = todos.createNew("Create a new project");
 
-  defaultTodo.date = [2023, 0, 17];
-  defaultTodo.description = "An example todo.";
+  completedTodo.isComplete = true;
 
+  defaultTodo.setDate = [2023, 0, 17];
+  defaultTodo.setDescription = "An example todo.";
+
+  defaultProject.addTodo(completedTodo);
   defaultProject.addTodo(defaultTodo);
   defaultPortfolio.addProject(defaultProject);
 
   return defaultPortfolio;
 }
 
-const loaded = load();
-
-if (loaded === undefined) {
-  createDefault();
-}
-
-window.load = load;
 window.util = util;
 
 window.createDefault = createDefault;
 
-window.Todo = Todo;
-window.Project = Project;
-window.Portfolio = Portfolio;
+const jsonString = util.loadFromStorage();
+let loadedPortfolio = {};
+if (jsonString === undefined) {
+  loadedPortfolio = createDefault();
+} else {
+  loadedPortfolio = portfolios.fromJSON(JSON.parse(jsonString));
+}
+
+dom.setup(loadedPortfolio);

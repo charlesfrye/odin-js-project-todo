@@ -1,35 +1,31 @@
 import { v4 as uuidv4 } from "uuid";
 
+import * as todos from "./todos";
+
 class Project {
-  constructor(title) {
-    this._title = title;
-    this._id = uuidv4();
-    this._todos = new Array();
-  }
-
-  get title() {
-    return this._title;
-  }
-
-  set title(string) {
-    if (typeof string === "string") {
-      this._title = string;
-    } else {
-      console.log(`invalid string for title: ${string}`);
-    }
-  }
-
-  get todos() {
-    return this._todos;
+  constructor(title, id, todos) {
+    this.title = title;
+    this.id = id;
+    this.todos = todos;
   }
 
   addTodo(todo) {
-    this._todos.push(todo);
+    this.todos.push(todo);
   }
 
   removeTodo(todo) {
-    this._todos = this._todos.filter((input) => input.id !== todo.id);
+    this.todos = this.todos.filter((input) => input.id !== todo.id);
   }
 }
 
-export { Project };
+function createNew(title) {
+  return new Project(title, uuidv4(), new Array());
+}
+
+function fromJSON(json) {
+  const tds = json.todos.map((todo) => todos.fromJSON(todo));
+  const project = new Project(json.title, json.id, tds);
+  return project;
+}
+
+export { Project, createNew, fromJSON };

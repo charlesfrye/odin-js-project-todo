@@ -1,47 +1,24 @@
 import { v4 as uuidv4 } from "uuid";
 
+import * as projects from "./projects";
+import * as util from "./util";
+
 class Portfolio {
-  constructor(title) {
-    this._title = title;
-    this._id = uuidv4();
-    this._projects = new Array();
-    this.save();
-  }
-
-  get title() {
-    return this._title;
-  }
-
-  set title(string) {
-    if (typeof string === "string") {
-      this._title = string;
-    } else {
-      console.log(`invalid string for title: ${string}`);
-    }
-  }
-
-  get projects() {
-    return this._projects;
+  constructor(title, id, projects) {
+    this.title = title;
+    this.id = id;
+    this.projects = new Array();
+    projects.map((project) => this.addProject(project));
   }
 
   addProject(project) {
-    this._projects.push(project);
+    this.projects.push(project);
     this.save();
   }
 
   removeProject(project) {
     this._projects = this._projects.filter((input) => input.id !== project.id);
     this.save();
-  }
-
-  get todos() {
-    return this._projects.flatMap((project) => project.todos);
-  }
-
-  mapTodos(f) {
-    return this._projects.map((project) => [
-      project.todos.map((todo) => f(todo, project)),
-    ]);
   }
 
   save() {
@@ -57,4 +34,14 @@ class Portfolio {
   }
 }
 
-export { Portfolio };
+function createNew(title) {
+  return new Portfolio(title, uuidv4(), new Array());
+}
+
+function fromJSON(json) {
+  const projs = json.projects.map((proj) => projects.fromJSON(proj));
+  const portfolio = new Portfolio(json.title, json.id, projs);
+  return portfolio;
+}
+
+export { Portfolio, createNew, fromJSON };

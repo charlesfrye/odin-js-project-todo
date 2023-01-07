@@ -41,7 +41,7 @@ div {
   align-items: center;
   background-color: #2f2e2e;
   border-radius: 1rem;
-  box-shadow: 1rem 0.5rem 1rem #1f1e1e;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem #333232;
   padding: 1rem;
 }
 
